@@ -1,0 +1,8 @@
+Las principales diferencias entre la programacion orientada a objetos y el paradigma estructurado.
+
+La programacion Orientada a Objetos es una forma de programar mas cercana a como se expresaria en la realidad. utiliza objetos y sus interacciones para diseñar aplicaciones y programas, combina datos y acciones asociadas (metodos)
+en estructuras lógicas(objetos), Encapsula datos (atributos y metodos) en objetos que están relacionados entre sí.
+Incluse datos y procedimientos en una clase. El codigo y los datos están fusionados en algo invisible: un objeto. Fcilita la creacion y mantenimiento del código
+
+La programacion estructurada es mas sencilla de comprender, ya que se puede leer de arriba hacia abajo sin la necesidad de estar saltando de un sitio a otro, esta orientada a mejorar la claridad,
+calidad y tiempo de desarrollo de un programa, utilizando unicamente subrutinas y tres estructuras basicas, estan orientados a acciones y complejidad para adaptarse. 
