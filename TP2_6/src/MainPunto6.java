@@ -15,6 +15,16 @@ public class MainPunto6 {
 		System.out.println("\n");
 		System.out.println(person3.toString());
 		
+		System.out.println("\n");
+		
+		// PERTENECIENTE AL PUNTO 8
+		
+		person1.calculateEdad(person1.getFechadeNacimiento(),person1.getNombre());
+		person2.calculateEdad(person2.getFechadeNacimiento(),person2.getNombre());
+		person3.calculateEdad(person3.getFechadeNacimiento(),person3.getNombre());
+		
+		/// >>> >>>>> /////
+		
 		//Lo podíra mejorar haciendo un arraylist y solo haría un syso para que me muestre la lista de personas.
 
 	}

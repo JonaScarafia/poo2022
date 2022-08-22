@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Persona {
 	
@@ -43,14 +44,26 @@ public class Persona {
 		this.fechadeNacimiento = fechadeNacimiento;
 	}
 	
+// PERTENECIENTE AL PUNTO 8
 	
-
-
-	@Override
+	public void calculateEdad(LocalDate fechadeNacimiento, String nombre) {
+		
+		LocalDate f1 = fechadeNacimiento;
+		LocalDate f2 = LocalDate.now();
+		 
+		Period period = Period.between(f1, f2);
+		 
+		System.out.println("La edad de "+nombre +" es: " + period.getYears());
+		
+	}
+	
+	
 	public String toString() {
 		return "Nombre de Persona: " + nombre + " \n Apellido: " + apellido + " \n Fecha de Nacimiento: " + fechadeNacimiento
-				+ " B)";
+				+ " XD";
 	}
+	
+	
 	
 	
 	
