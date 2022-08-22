@@ -1,0 +1,5 @@
+
+
+enum Genero{
+	HOMBRE, MUJER, TRANS, NOBINARIE,NULO
+}
