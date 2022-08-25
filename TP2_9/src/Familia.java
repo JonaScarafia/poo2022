@@ -5,7 +5,10 @@ public class Familia {
 	private String Apellido, direccion;
 	private ArrayList<Persona> integrantes;
 	private int cantidad;
-
+	
+//A NIVEL DISEÑO LA CANTIDAD ESTA MAL! DEBERIA PODER UN METODO CONTAR LA CANTIDAD DE FAMILIA
+// A DEBERIA SER UN ARRAYLIST
+	
 	public Familia(String apellido, String direccion, ArrayList<Persona> integrantes, int cantidad) {
 		super();
 		Apellido = apellido;
@@ -39,7 +42,7 @@ public class Familia {
 	}
 
 	public int getCantidad() {
-		return cantidad;
+		return this.integrantes.size(); // acá el profesor me comento que me podría devolver la cantidad de una familia
 	}
 
 	public void setCantidad(int cantidad) {

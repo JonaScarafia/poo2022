@@ -1,0 +1,38 @@
+/*
+
+explique el concepto de herencia múltiple y cuál es el problema que se presenta al implementarla. ¿Cuál es la solución que brinda Java a este problema?
+
+
+El concepto de herencia multiple hace referencia a la caracteristica de los lenguajes de programacion orientada a objetos en la que una clase puede heredar
+comportamientos y caracteristicas de más de una superclase (PADRE). Esto contrasta con la herencia simple, donde una clase solo puede heredar de una superclase(Padre)
+
+Los lenguajes que soportan herencia multiple son C++, Eiffel y Python.
+
+EJEMPLO -> La herencia Multiple permite a una clase tomar funcionalidades de otras clases, como permitir a una clase llamada MusicoEstudinate heredar de una clase llamada Persona
+una clase llamada MUSICO, y una clase llamada Trabajador. Esto puede ser abreviado como MusicoEstudiante: Persona, Musico, Trabajador.
+
+
+El problema de implementar herencia multiples es la ambiguedad y conflictos de nombres y el tipico problema del diamante
+
+PROBLEMA DEL DIAMANTE
+
+ES UNA AMBIEGUEDAD QUE SURGE CUANDO DOS CLASES B Y C HEREDAN DE A, Y LA CLASE D HEREDA DE B Y C. Si un metodo en D llama a un metodo definido en A
+ ¿por que clase hereda B o C?
+
+
+Los desarrolladores de JAVA considerando  los problemas planteados con la herencia multiple decidieron que causaban mas problemas de los que resolvia por este motivo no se 
+permite herencia multiple. pero en cambio dispone de la construccion denominada "Interface" que permite una forma de simulacion o implementacion limitada de la herencia multiple
+
+Una interface es una construccion similar a una clase abstracta en JAVA, pero con las siguientes diferencias.
+
+
+A) EN EL ENCABEZADO SE UNA LA PALABRA CLAVE INTERFACE EJEMPLO -> PUBLIC INTERFACE NOMBREDELINTERFACE{...} 
+
+B) TODO METODO ES ABSTRACTO Y PUBLICO SIN NECESIDAD DE DECLARARLO.
+
+C) LAS INTERFACES NO TIENEN NINGUN CONSTRUCTOR
+
+D) UN INTERFAZ SOLO ADMITE CAMPOS DE TIPO "PUBLIC STATIC FINAL"
+
+E) La interface se implementa (implements) no se extiende (extends)
+*/
