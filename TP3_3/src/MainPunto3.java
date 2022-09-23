@@ -2,7 +2,7 @@
 public class MainPunto3 {
 
 	public static void main(String[] args) {
-
+//seria mejor de lo mas abstracto por que no se estaria implementando interfaces de manera correcta
 		Pizza pizza = new Pizza("Especial","Salado","Italia",2000.0,"redonda","Mediana","Don Nicola");
 		Movil movil = new Movil("AL23","Alcatel","Fire ",297444444,"Argentina" );
 

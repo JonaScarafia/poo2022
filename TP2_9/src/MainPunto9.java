@@ -40,15 +40,15 @@ public class MainPunto9 {
 
 		//En mi main deberia poder agregar las familias en un array para poder devolver la cantidad, de las familias
 
-		//		System.out.println(family1.toString());
-		//	family1.mostrarIntegrantes(family1.getApellido());
-		//		
-		//		System.out.println(family2.toString());
-		//		family2.mostrarIntegrantes(family2.getApellido());
-		//		
-		//		System.out.println(family3.toString());
-		//		family3.mostrarIntegrantes(family3.getApellido());
-		//		
+				System.out.println(family1.toString());
+			family1.mostrarIntegrantes(family1.getApellido());
+				
+				System.out.println(family2.toString());
+				family2.mostrarIntegrantes(family2.getApellido());
+				
+				System.out.println(family3.toString());
+				family3.mostrarIntegrantes(family3.getApellido());
+				
 
 		/// Punto 10
 		//		

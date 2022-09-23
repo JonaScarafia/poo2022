@@ -44,7 +44,7 @@ public abstract class Personaje {
 		return nivelAtaque*5;
 	}
 
-	public int defender() {
+	private int defender() {
 
 		return nivelAtaque-nivelDefensa;
 	}
