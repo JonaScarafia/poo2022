@@ -5,11 +5,13 @@ import java.util.Random;
 
 public class Persona {
 
+	/* ok!*/
 	private String name;
 	private Integer edad;
 
+	/* el constructor esta ok, una pena que no lo hayas usado pasando directo los valores en lugar de null :(  */
 	public Persona(String name, Integer edad) {
-		super();
+		super(); // innecesario
 		this.name = name;
 		this.edad = edad;
 	}
@@ -22,7 +24,10 @@ public class Persona {
 		this.edad = edad;
 	}
 
-
+/* ya remarcado, evitemos que las clases generen sus propios datos de prueba
+ * en un entorno real esto no puede pasar
+ * evitemos tomar la mala practica
+ *  */
 	public void generationAge() {
 
 		Random rndAge = new Random();
@@ -47,8 +52,21 @@ public class Persona {
 
 
 	@Override
+	/* tenés un metodo toString
+	 * es preferible que luego al imprimir lo llames explicitamente
+	 * System.out.print(persona.toString());
+	 * en lugar de
+	 * System.out.print(persona);
+	 * es mucho mas claro
+	 *  */
 	public String toString() {
 		return  " La edad de la persona "+name +" es "+edad;
 	}
+	/* no dejes comentarios que no aportan nada
+	 * el código entra primero por los ojos ;)
+	 * entre mas claro y prolijo mejor para quien te lee
+	 * sea una evaluación o un code review en un ambiente laboral
+	 * consejo para tu carrera
+	 *  */
 	//HACER UN NEW EN EL FOR PARA PODER IMPRIMIR TODAS LAS PERSONAS
 }
