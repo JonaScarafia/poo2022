@@ -9,6 +9,7 @@ public class GeneracionDatos {
 
 	private static ArrayList<String> marcas = new ArrayList<>(
 			Arrays.asList("Sanyo", "Dreams", "Whirpool", "Patrick", "Orbi"));
+
 	private static ArrayList<String> colores = new ArrayList<>(
 			Arrays.asList("Blanco", "Plateado", "Negro", "Azul", "Verde"));
 
@@ -23,6 +24,7 @@ public class GeneracionDatos {
 		Cocina cocina = new Cocina(modelo, marca, color, precio, electrica);
 
 		return cocina;
+		//return new cocina(modelo, marcar, color, precio, electrica);
 
 	}
 

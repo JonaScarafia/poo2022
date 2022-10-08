@@ -1,17 +1,16 @@
 
-public class Electrodomestico {
+public class Electrodomestico { // debería ser abstracta ya que nunca voy a querer instanciar obra sino sus clases derivadas.
 
-	private String modelo, marca, color;
+	private String modelo, marca, color; // deberían ser protected 
 	private Integer precio;
-	// private ArrayList<Electrodomestico> listElectrodomesticos;
+	
 
 	public Electrodomestico(String modelo, String marca, String color, Integer precio) {
-		super();
+		//super(); Esta clase no extiende especificamente de una clase nuestra, no tiene sentido hacer uso de super
 		this.modelo = modelo;
 		this.marca = marca;
 		this.color = color;
 		this.precio = precio;
-		// this.listElectrodomesticos = listElectrodomesticos;
 	}
 
 	public String getModelo() {
@@ -45,17 +44,6 @@ public class Electrodomestico {
 	public void setPrecio(Integer precio) {
 		this.precio = precio;
 	}
-
-	/*
-	 * 
-	 * public ArrayList<Electrodomestico> getListElectrodomesticos() { return
-	 * listElectrodomesticos; }
-	 * 
-	 * public void setListElectrodomesticos(ArrayList<Electrodomestico>
-	 * listElectrodomesticos) { this.listElectrodomesticos = listElectrodomesticos;
-	 * }
-	 * 
-	 */
 
 	public String toString() {
 		return " Modelo= " + modelo + ", Marca= " + marca + ", Color= " + color + ", Precio= $" + precio;
