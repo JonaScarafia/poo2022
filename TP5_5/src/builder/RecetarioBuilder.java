@@ -3,11 +3,11 @@ package builder;
 import ingredientes.Masa;
 import ingredientes.Mezcla;
 import ingredientes.Relleno;
-
+import tortas.Recetario;
 import tortas.TipoTorta;
-import tortas.Torta;
 
-public class TortaBuilder implements Builder {
+public class RecetarioBuilder implements Builder{
+
 	
 	private TipoTorta tipo;
 	private Masa masa;
@@ -15,7 +15,7 @@ public class TortaBuilder implements Builder {
 	private Mezcla mezcla;
 	
 	public void setTipoTorta(TipoTorta tipo) {
-		 this.tipo = tipo;
+		this.tipo = tipo;
 		
 	}
 
@@ -23,21 +23,19 @@ public class TortaBuilder implements Builder {
 		this.masa =masa;
 		
 	}
-
+	
 	public void setRelleno(Relleno relleno) {
 		this.relleno = relleno;
 		
 	}
-
 	
 	public void setMezcla(Mezcla mezcla) {
 		this.mezcla =mezcla;
 		
 	}
 	
-	
-	public Torta getResultado() {
-		return new Torta(tipo, masa,relleno,mezcla);
+	public Recetario getResultado() {
+		return new Recetario(tipo, masa, relleno, mezcla);
 	}
 	
 }

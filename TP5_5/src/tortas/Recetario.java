@@ -12,53 +12,23 @@ public class Recetario {
 	private Relleno relleno;
 	private Mezcla mezcla;
 
-	public Recetario(Integer cantidadHojas, TipoTorta tipo, Masa masa, Relleno relleno, Mezcla mezcla) {
+	public Recetario(TipoTorta tipo, Masa masa, Relleno relleno, Mezcla mezcla) {
 		super();
-		this.cantidadHojas = cantidadHojas;
 		this.tipo = tipo;
 		this.masa = masa;
 		this.relleno = relleno;
 		this.mezcla = mezcla;
 	}
 
-	public Integer getCantidadHojas() {
-		return cantidadHojas;
+	public String toString() {
+		String info ="";
+		info +="Tipo de Torta: "+ tipo+"\n";
+		info +=" Tipo de Masa: "+ masa+"\n";
+		info +="Tipo de relleno: "+ relleno+"\n";
+		info +="Masa: Cantidad de huevos: "+ mezcla.getHuevos()+" Tiempo de coccion en minutos "+mezcla.getTiempoCoccion()+"'"+" Cantidad de Harina en kilogramos "+mezcla.getHarina()+" kg "+"\n";
+		
+		return info;
 	}
 
-	public void setCantidadHojas(Integer cantidadHojas) {
-		this.cantidadHojas = cantidadHojas;
-	}
-
-	public TipoTorta getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(TipoTorta tipo) {
-		this.tipo = tipo;
-	}
-
-	public Masa getMasa() {
-		return masa;
-	}
-
-	public void setMasa(Masa masa) {
-		this.masa = masa;
-	}
-
-	public Relleno getRelleno() {
-		return relleno;
-	}
-
-	public void setRelleno(Relleno relleno) {
-		this.relleno = relleno;
-	}
-
-	public Mezcla getMezcla() {
-		return mezcla;
-	}
-
-	public void setMezcla(Mezcla mezcla) {
-		this.mezcla = mezcla;
-	}
 
 }
