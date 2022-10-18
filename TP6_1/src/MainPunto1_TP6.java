@@ -3,8 +3,20 @@ public class MainPunto1_TP6 {
 
 	public static void main(String[] args) {
 
+		for (int i = 0; i < 6; i++) {
+			
 		
-
+			
+		//HiloExtendiendo hiloEjemplo = new HiloExtendiendo(i);	
+		//hiloEjemplo.start();
+		
+		
+		HiloImplementando hiloEjemploRunnable = new HiloImplementando(i);
+		Thread thread = new Thread(hiloEjemploRunnable);
+		thread.start();
+		
+		}
+		
 		/*
 		  
 		  Esto esta bien o esta mal! es una pregunta que me debo hacer! para debuggear
@@ -13,7 +25,6 @@ public class MainPunto1_TP6 {
 		  la vez principio de multiprocesamiento
 		  
 		 */
-
 	}
 
 }
