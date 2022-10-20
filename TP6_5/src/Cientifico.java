@@ -11,6 +11,7 @@ public class Cientifico extends Thread {
 	}
 	
 	private void promediar(String nombreBoya, String tipoDato) {
+		// condicion de fin cantidad de boyas tenemos que dejar de esperar o consumir cosas en este caso por el null
 		
 		Double suma=0.0;
 		Integer total=0;

@@ -25,43 +25,45 @@ public class HiloImplementando implements Runnable {
 
 			
 
-			if (getId() == 0) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(0000);
+			//if (getId() == 0) {
+				//System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+				//Thread.sleep(0000);
 
-			}
+			//}
+		//	for (int i = 1; i < 6; i++) {
+				
 			
-			if (getId() == 1) {
+		//	if (getId() == i) {
 				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(1000);
-
-			}
-			if (getId() == 2) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(2000);
-
-			}
-			if (getId() == 3) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(3000);
-
-			}
-			
-			if (getId() == 4) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(4000);
-
-			}
-			if (getId() == 5) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(5000);
-
-			}
-			if (getId() == 6) {
-				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
-				Thread.sleep(6000);
-
-			}
+				Thread.sleep(getId()*1000);
+			//}
+			//}
+//			if (getId() == 2) {
+//				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+//				Thread.sleep(2000);
+//
+//			}
+//			if (getId() == 3) {
+//				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+//				Thread.sleep(3000);
+//
+//			}
+//			
+//			if (getId() == 4) {
+//				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+//				Thread.sleep(4000);
+//
+//			}
+//			if (getId() == 5) {
+//				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+//				Thread.sleep(5000);
+//
+//			}
+//			if (getId() == 6) {
+//				System.out.println("el hilo "+Thread.currentThread().getName()+" Se va a dormir");
+//				Thread.sleep(6000);
+//
+//			}
 
 		} catch (Exception e) {
 
@@ -76,7 +78,7 @@ public class HiloImplementando implements Runnable {
 	  de la otra forma con extends, notar que es necesario crear un Thread y pasar como parametro la instancia
 	  de la clase que implementa la interfaz runneable
 	  
-	  
+	  syncronizado signifoca que solo un hilo esta en el metodo
 	 */
 	
 }

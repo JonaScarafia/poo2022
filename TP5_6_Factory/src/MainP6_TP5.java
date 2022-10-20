@@ -12,7 +12,7 @@ public class MainP6_TP5 {
 	 * plataforma Estos valores deben ser double y multiplicarlos al importe.
 	 * 
 	 * 
-	 * 
+	 * Lo que va a cambiar es el concreto no hay que enredarse tanto con el tema de la herencia y demas lo importante es que se aplique la fabrica
 	 */
 
 	public static void main(String[] args) {
