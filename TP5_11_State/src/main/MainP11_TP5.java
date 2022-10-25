@@ -8,7 +8,24 @@ public class MainP11_TP5 {
 		
 		Banco banco = new Banco();
 		
-		new Menu(banco).display();
+		System.out.println(banco);
+		
+		//Test ocupado
+		banco.cajaOcupada();
+		//banco.estadoActual(); // puedo utilizar esto o el to string
+		System.out.println(banco);
+		
+		//test suspendida
+		banco.cajaSuspendida();
+		System.out.println(banco);
+		
+		//test Cerrada
+		banco.cajaCerrada();
+		System.out.println(banco);
+		
+		//test caja abierta
+		banco.cajaAbierta();
+		System.out.println(banco);
 
 	}
 

@@ -54,5 +54,9 @@ public class CajaOcupada implements State {
 		System.out.println("La caja esta Ocupada");
 		
 	}
+	
+	public String toString() {
+		return "ocupada";
+	}
 
 }

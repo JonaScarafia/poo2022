@@ -54,4 +54,11 @@ public class CajaAbierta implements State {
 		System.out.println("La caja esta Abierta");
 		
 	}
+
+	
+	public String toString() {
+		return "abierta";
+	}
+	
+	
 }

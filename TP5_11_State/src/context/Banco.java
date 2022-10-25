@@ -22,6 +22,10 @@ public class Banco {
 		
 	}
 	
+	public void cajaAbierta() {
+		this.estado.Abierta();
+	}
+	
 	public void cajaCerrada() {
 		this.estado.Cerrada();
 	}
@@ -36,10 +40,30 @@ public class Banco {
 	public void estadoActual() {
 		this.estado.estadoActual();
 	}
+	
+	
 
-//public void estadoActual() {
-//	this.estado.estadoActual();
-//}
+
+	public State getEstado() {
+		return estado;
+	}
+
+
+	public void setEstado(State estado) {
+		this.estado = estado;
+	}
+
+
+
+	public String toString() {
+	StringBuffer result = new StringBuffer();
+	result.append("La caja esta "+ this.getEstado()+"\n");
+	
+		return result.toString();
+	
+	}
+
+	
 	
  
 

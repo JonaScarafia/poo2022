@@ -50,4 +50,8 @@ public class CajaSuspendida implements State{
 		System.out.println("la caja esta suspendida");
 		
 	}
+	
+	public String toString() {
+		return "suspendida";
+	}
 }

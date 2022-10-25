@@ -42,4 +42,9 @@ public class CajaCerrada implements State{
 		
 	}
 	
+	public String toString() {
+		return "cerrada";
+	}
+	
+	
 }
