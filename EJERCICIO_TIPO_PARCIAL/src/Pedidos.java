@@ -15,6 +15,7 @@ public class Pedidos {
 			try {
 				
 				wait();
+				System.out.println("EL mozo no puede llevar mas de tres platos");
 				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -22,6 +23,7 @@ public class Pedidos {
 			
 		}
 		this.platos.add(plato);
+		System.out.println("El plato ya esta listo!!! ");
 		notifyAll();
 	}
 	
@@ -29,11 +31,13 @@ public class Pedidos {
 		
 		while (this.platos.isEmpty()) {
 			try {
+				System.out.println("No se puede servir todavía! los platos no están listos!!! ");
 				wait();
 			} catch (Exception e) {
-				
+				System.out.println("Error en el try");
 			}
 		}
+		System.out.println("Se sirve plato al cliente!!! Buen Provecho! \n");
 		Plato plato = platos.removeFirst();
 		
 		return plato; 
