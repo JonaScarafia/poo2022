@@ -32,7 +32,7 @@ public class Servidor {
 		
 		while(colaPaquetes.isEmpty()) {
 			try {
-				
+				System.out.println("Todavia no hay datos que consultar!!! Espere... \n");
 				wait();
 				
 			} catch (InterruptedException e) {

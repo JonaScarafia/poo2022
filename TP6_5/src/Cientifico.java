@@ -6,7 +6,7 @@ public class Cientifico extends Thread {
 	public LinkedList<PaqueteDatos> colaPaquetes=new LinkedList<PaqueteDatos>();
 	
 	public Cientifico(Servidor servidor) {
-		super();
+		
 		this.servidor = servidor;
 	}
 	
@@ -14,7 +14,8 @@ public class Cientifico extends Thread {
 		// condicion de fin cantidad de boyas tenemos que dejar de esperar o consumir cosas en este caso por el null
 		
 		Double suma=0.0;
-		Integer total=0;
+		Double total=0.0;
+		Double promedio=0.0;
 		
 		for (PaqueteDatos paqueteDatos : colaPaquetes) {
 			if(paqueteDatos.getNombreBoya().equals(nombreBoya)) {
@@ -24,12 +25,13 @@ public class Cientifico extends Thread {
 				
 			}else {
 				suma = suma +paqueteDatos.getVelocidadViento();
+				
 			}
 			total++;
 		}
-	
+			promedio=suma/total;
 		}
-		System.out.println("El promedio de "+tipoDato+" para la boya "+nombreBoya+" es: "+(suma/total));
+		System.out.println("El promedio de "+tipoDato+" para la boya "+nombreBoya+" es: "+promedio);
 	}
 	
 

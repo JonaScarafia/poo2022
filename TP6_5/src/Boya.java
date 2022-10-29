@@ -8,11 +8,12 @@ public class Boya extends Thread {
 	private Anemometro anemometro;
 
 	public Boya(String nombre, Servidor servidor) {
-		super();
+
 		this.nombre = nombre;
 		this.servidor = servidor;
-		this.termometro = new Termometro();
+		this.termometro = new Termometro();// Inicializar 
 		this.anemometro = new Anemometro();
+
 	}
 
 	public String getNombre() {
@@ -47,7 +48,6 @@ public class Boya extends Thread {
 		this.anemometro = anemometro;
 	}
 
-	
 	private void enviar(PaqueteDatos paquete) throws ExcepcionEnvio {
 		try {
 
@@ -67,19 +67,20 @@ public class Boya extends Thread {
 		this.getServidor().almacenar(paquete);
 
 	}
-	
 
 	private PaqueteDatos generarPaquete() {
-		return new PaqueteDatos(this.getNombre(), this.getTermometro().sensar(), this.getAnemometro().sensar(), System.currentTimeMillis());
+		return new PaqueteDatos(this.getNombre(), this.getTermometro().sensar(), this.getAnemometro().sensar(),
+				System.currentTimeMillis());
 	}
 
 	public void run() {
-		
-		for (int i = 0; i <5; i++) {
+
+		for (int i = 0; i < 5; i++) {
 			try {
 				this.enviar(this.generarPaquete());
 			} catch (ExcepcionEnvio e) {
-				System.out.println("ERROR: " +this.getNombre()+ " Hubbo una falla en la comunicación, se perdio el paquete");
+				System.out.println(
+						"ERROR: " + this.getNombre() + " Hubo una falla en la comunicación, se perdio el paquete");
 			}
 		}
 		this.getServidor().almacenar(null);
