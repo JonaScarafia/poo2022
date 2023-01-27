@@ -19,7 +19,18 @@ public class MainPunto2_PP202_V2 {
 	 * Le agregaría polimorfismo estatico con un metodo sobrecargado para que a la
 	 * hora de utilizarlo el programador decida de que manera desea sacar la foto
 	 * 
+	 * 
+	 * Comentario de Pablo
+	  
+	  1- el delay es tiempo, quizás un integer sea más útil.
+      2- en el Main el polimorfismo al utilizar la interfaz no sé aplica si no haces que las instancias sean vistas como la interfaz.
+      Osea.. TelefonoV2 telefono1 = new TelefonoV2 no.  DispositivoElectronicoV2 telefono1 = new TelefonoV2 si.
+	   Y un bucle para hacer tantas instancias también sería útil
+	 
+	 *
 	 */
+	
+	
 
 	public static void main(String[] args) {
 
