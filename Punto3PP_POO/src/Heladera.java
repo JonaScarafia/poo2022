@@ -32,8 +32,8 @@ public class Heladera extends Electrodomestico {
 	@Override
 	public String toString() {
 
-		return super.toString() + " Capacidad Total en litros es: " + capacidadTotal + ", Frezzer en litros es: "
-				+ frezzer;
+		return super.toString() + ", Capacidad Total en litros es: " + capacidadTotal + ", Frezzer en litros es: "
+				+ frezzer +"L";
 
 	}
 

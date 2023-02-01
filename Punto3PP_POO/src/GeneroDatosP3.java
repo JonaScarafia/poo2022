@@ -20,7 +20,7 @@ public class GeneroDatosP3 {
 
 		for (int i = 0; i < cantidad; i++) {
 
-			String modelo = "ModeloA" + rand.nextInt(1101);
+			String modelo = "Heladera Modelo-A" + rand.nextInt(1101);
 			Integer precio = rand.nextInt(7501) + 1000;
 			String marca = marcas.get(rand.nextInt(marcas.size()));
 			String color = colores.get(rand.nextInt(colores.size()));
@@ -44,7 +44,7 @@ public class GeneroDatosP3 {
 
 		for (int i = 0; i < cantidad; i++) {
 
-			String modelo = "ModeloB" + rand.nextInt(1201);
+			String modelo = "Cocina Modelo-B" + rand.nextInt(1201);
 			Integer precio = rand.nextInt(7501) + 1000;
 			String marca = marcas.get(rand.nextInt(marcas.size()));
 			String color = colores.get(rand.nextInt(colores.size()));
@@ -65,7 +65,7 @@ public class GeneroDatosP3 {
 
 		for (int i = 0; i < cantidad; i++) {
 
-			String modelo = "ModeloC" + rand.nextInt(1301);
+			String modelo = "Lavarropas Modelo-C" + rand.nextInt(1301);
 			Integer precio = rand.nextInt(7501) + 1000;
 			String marca = marcas.get(rand.nextInt(marcas.size()));
 			String color = colores.get(rand.nextInt(colores.size()));

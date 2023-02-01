@@ -47,7 +47,7 @@ public class Electrodomestico {
 	}
 
 	public String toString() {
-		return " Modelo: " + modelo + ", Precio= $ " + precio + ", Marca: " + marca + ", Color: " + color;
+		return modelo + ", Precio= $" + precio + ", Marca: " + marca + ", Color: " + color;
 	}
 
 }

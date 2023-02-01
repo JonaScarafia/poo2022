@@ -30,7 +30,7 @@ public class Lavarropas extends Electrodomestico {
 	}
 
 	public String toString() {
-		return super.toString() + "Es cargaFrontal=" + cargaFrontal + " La capacidad en kilogramos es " + capacidad + "]";
+		return super.toString() + ", Carga Frontal= "  + cargaFrontal + ", La capacidad es " + capacidad + "kg";
 	}
 
 }

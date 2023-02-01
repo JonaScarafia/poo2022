@@ -19,7 +19,7 @@ public class Cocina extends Electrodomestico {
 	}
 
 	public String toString() {
-		return super.toString() + "La cocina es electrica: " + electrica;
+		return super.toString() + ", La cocina es electrica: " + electrica;
 	}
 
 }
