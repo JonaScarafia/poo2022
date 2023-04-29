@@ -5,5 +5,5 @@
  * @author scara
  *
  */
-module PracticaRecFinal {
+module Punto1RecFinalPooB {
 }
